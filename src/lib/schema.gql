@@ -1,0 +1,10 @@
+type User {
+	id: ID
+	name: String
+	avatar: String
+	email: String
+}
+
+type Query {
+	users(query: String, offset: Int, limit: Int): [User]
+}
